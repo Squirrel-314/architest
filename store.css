@@ -1,0 +1,47 @@
+html {
+  background-color: #292929;
+  opacity: .8;
+}
+
+body {
+  margin: 15px;
+  border: ridge 8px gold;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+}
+
+.buy, .hire {
+  text-align: center;
+}
+
+h2 {
+  color: #a9b4c3;
+}
+
+.item, .locked {
+  height: 90px;
+  width: 90px;
+  display: inline-block;
+  border: groove 2px gold;
+  margin: 2px 0px;
+  padding: 8px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px;
+  position: relative;
+}
+
+.locked p {
+  color: #f94179;  /*#a94179*/
+  text-shadow: 1px 1px 2px #f94179,
+                  1px -1px 2px #f94179,
+                  -1px 1px 2px #f94179,
+                  -1px -1px 2px #f94179;
+  transform: rotateZ(-45deg);
+  font-family: Helvetica;
+  //overflow: visible;
+  font-size: 38px;
+  position: absolute;
+  top: 0px;
+  left: -12px;
+}
