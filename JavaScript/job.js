@@ -1,6 +1,6 @@
-let employer = ['Flimsy Foundation Inc.', 'Collapse Co.', 'Slapdash L.L.C.', 'Rinkydink Mistakes Corp', 'Rickity Builds Ltd', 'Evil Engineering Co-Op'][Math.floor(Math.random() * 5)];
-let budget = ['$10,000', '$8,000'][Math.floor(Math.random() * 2)];
-let waitTime = [8000, 12000, 10000][Math.floor(Math.random() * 2)];
+let employer = ['Flimsy Foundation Inc.', 'Collapse Co.', 'Slapdash L.L.C.', 'Rinkydink Mistakes Corp', 'Rickity Builds Ltd', 'Evil Engineering Co-Op'][Math.floor(Math.random() * 6)];
+let budget = ['$10,000', '$8,000', '$12,000'][Math.floor(Math.random() * 3)];
+let waitTime = [8000, 12000, 10000][Math.floor(Math.random() * 3)];
 
 function accept() {
    window.location.href = "../HTML/job-info.html";
@@ -11,8 +11,9 @@ function deny() {
    setTimeout(giveJob, waitTime);
    document.getElementById("yes").style.display = "none";
    document.getElementById("no").style.display = "none";
-   employer = ['Flimsy Foundation Inc.', 'Collapse Co.', 'Slapdash L.L.C.', 'Rinkydink Mistakes Corp', 'Rickity Builds Ltd', 'Evil Engineering Co-Op'][Math.floor(Math.random() * 5)];
-   budget = ['$10,000', '$8,000'][Math.floor(Math.random() * 2)];
+   employer = ['Flimsy Foundation Inc.', 'Collapse Co.', 'Slapdash L.L.C.', 'Rinkydink Mistakes Corp', 'Rickity Builds Ltd', 'Evil Engineering Co-Op'][Math.floor(Math.random() * 6)];
+   budget = ['$10,000', '$8,000', '$12,000'][Math.floor(Math.random() * 3)];
+   waitTime = [10000, 12000, 14000][Math.floor(Math.random() * 3)];
 }
 
 function giveJob() {
