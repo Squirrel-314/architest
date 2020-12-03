@@ -25,4 +25,4 @@ function findJob() {
    setTimeout(giveJob, waitTime);
 }
 
-window.onload = findJob()
+window.onload = findJob();
