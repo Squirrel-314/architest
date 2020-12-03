@@ -1,0 +1,24 @@
+body {
+  text-align: center;
+  background-image: url("../Images/wallpaper.jpg");
+}
+
+p {
+  height: 50px;
+  width: 125px;
+  border: 5px outset gold;
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  background-color: #80775e;
+  color: #fff;
+  font-family: Helvetica;
+  padding: 5px;
+  font-size: 20px;
+}
+
+img {
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+}
