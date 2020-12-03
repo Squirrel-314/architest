@@ -9,9 +9,13 @@ img {
   bottom: 2%;
 }
 
+h2 {
+   margin: 10px 0;
+}
+
 .job-board {
-   width: 250px;
-   height: 163px;
+   width: 270px;
+   height: 175px;
    position: absolute;
    top: 25px;
    right: 45px;
@@ -30,3 +34,12 @@ img {
    position: absolute;
    top: 50px;
    left: 40%;
+}
+
+.reply {
+   display: none;
+   margin: 0 5px 5px 5px;
+   background-color: #37e2d9;
+   border: groove 4px gold;
+   border-radius: 5px;
+}
