@@ -1,3 +1,3 @@
 function explainaion() {
-  document.getElementsById('explained').style.height = "auto",
+  document.getElementsById('explained').style.display = "block",
 }

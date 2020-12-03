@@ -19,7 +19,7 @@ body {
 }
 
 .explain {
-  height
+  visibility: collapse;
 }
 
 #help {
