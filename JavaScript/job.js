@@ -11,6 +11,8 @@ function deny() {
    setTimeout(giveJob, waitTime);
    document.getElementById("yes").style.display = "none";
    document.getElementById("no").style.display = "none";
+   employer = ['Flimsy Constructs Inc.', 'Collapse Co.', 'Slapdash L.L.C.', 'Rinkydink Mistakes Corp', 'Rickity Builds Ltd'][Math.floor(Math.random() * 5)];
+   budget = ['$10,000', '$8,000'][Math.floor(Math.random() * 2)];
 }
 
 function giveJob() {
