@@ -3,20 +3,6 @@ body {
   background-image: url("../Images/wallpaper.jpg");
 }
 
-#wait {
-  height: 50px;
-  width: 125px;
-  border: 5px outset gold;
-  position: absolute;
-  top: 25px;
-  right: 45px;
-  background-color: #80775e;
-  color: #fff;
-  font-family: Helvetica;
-  padding: 5px;
-  font-size: 20px;
-}
-
 img {
   position: absolute;
   left: 2%;
@@ -24,11 +10,17 @@ img {
 }
 
 .job-board {
-   width: 200px;
-   height: 150px;
-   border: ridge 5px #262626;
+   width: 250px;
+   height: 163px;
    position: absolute;
-   margin: auto;
+   top: 25px;
+   right: 45px;
+   color: #fff;
+   font-family: Helvetica;
+   padding: 5px;
+   font-size: 20px;
+   background-image: url("../Images/job-board.jpg");
+   background-size: cover;
 }
 
 #clock {
@@ -36,5 +28,5 @@ img {
    height: 100px;
    width: 100px;
    position: absolute;
-   top: 75px;
-   left: 50%;
+   top: 50px;
+   left: 40%;

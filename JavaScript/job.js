@@ -4,7 +4,7 @@ let waitTime = [8000, 12000, 10000][Math.floor(Math.random() * 2)];
 
 function giveJob() {
    console.log(employer,"is hiring you for", budget);
-   document.getElementById("job1").innerHTML = employer,"is hiring you for", budget;
+   document.getElementById("job1").innerHTML = employer + " is hiring you for " + budget;
 }
 
 function findJob() {
