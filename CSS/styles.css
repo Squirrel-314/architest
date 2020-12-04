@@ -2,20 +2,22 @@ body {
   font-family: Helvetica;
   text-align: center;
   padding: 25px;
+  background-color: #000;
+  color: #fff;
 }
 
 .start-button {
-  width: 260px;
-  height: 150px;
+  width: 45%;
+  height: 100px;
   background-image: radial-gradient(lightgreen, cornflowerblue);
   border: ridge 8px lightblue;
   border-radius: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   color: #fff;
   font-size: 25px;
   text-shadow: 5px 5px 5px #000;
+  margin: 15px auto;
+  line-height: 40px;
 }
 
 .explain {
@@ -30,6 +32,26 @@ body {
   border: ridge 3px #262626;
   border-radius: 50%;
   animation: notice 2s 8 5s;
+  background-color: #fff;
+  color: #000;
+}
+
+#ok:hover {
+   animation: shake .4s infinite alternate linear;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+@keyframes shake {
+   0% {
+      transform: rotate(10deg) translateY(-10px);
+   }
+   100% {
+      transform: rotate(-10deg) translateY(-5px);
+   }
 }
 
 @keyframes notice {
