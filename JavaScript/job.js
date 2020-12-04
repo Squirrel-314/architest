@@ -8,9 +8,6 @@ let waitTime = [8000, 12000, 10000][Math.floor(Math.random() * 3)];
 
 function accept() {
    window.location.href = "../HTML/tasks.html";
-   if (budget = "$10,000") {
-      budget = 10000;
-   }
 }
 
 function deny() {
@@ -45,3 +42,7 @@ function jobInfoSetup() {
 }
 
 window.onload = jobInfoSetup();
+
+function shop() {
+   window.location.href = "../HTML/store.html";
+}
