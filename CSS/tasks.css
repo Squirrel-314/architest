@@ -86,9 +86,9 @@ body, html {
 
 @keyframes hover {
    0% {
-      transform: rotate(15deg) translateY(-8px);
+      transform: rotate(10deg) translateY(-8px);
    }
    100% {
-      transform: rotate(-15deg)translateY(-8px);
+      transform: rotate(-10deg)translateY(-8px);
    }
 }
