@@ -1,6 +1,8 @@
 html {
-  background-color: #292929;
-  opacity: .8;
+   background-color: #292929;
+   opacity: .8;
+   text-align: center;
+   overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -8,18 +10,25 @@ html {
 }
 
 ::selection {
-  background: none;
+   background: none;
 }
 
-body {
-  margin: 15px;
-  border: ridge 8px gold;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 4px;
+.container {
+   margin: 15px;
+   border: ridge 8px gold;
+   background-color: rgba(0, 0, 0, 0.8);
+   border-radius: 4px;
 }
 
-.buy, .hire {
-  text-align: center;
+.much {
+   position: sticky;
+   top: 0;
+   margin: 15px -25px 15px -25px;
+   border: ridge 8px gold;
+   background-color: rgba(0, 0, 0, 0.9);
+   border-radius: 4px;
+   z-index: 1;
+   color: #fff;
 }
 
 h2 {
@@ -44,15 +53,15 @@ h2 {
 }
 
 .locked p {
-  color: #f94179;  /*#a94179*/
-  text-shadow: 1px 1px 2px #f94179,
-                  1px -1px 2px #f94179,
-                  -1px 1px 2px #f94179,
-                  -1px -1px 2px #f94179;
-  transform: rotateZ(-45deg);
-  font-family: Helvetica;
-  font-size: 38px;
-  position: absolute;
-  top: -10px;
-  left: -10px;
+   color: #f94179;  /*#a94179*/
+   text-shadow: 1px 1px 2px #f94179,
+      1px -1px 2px #f94179,
+      -1px 1px 2px #f94179,
+      -1px -1px 2px #f94179;
+   transform: rotateZ(-45deg);
+   font-family: Helvetica;
+   font-size: 38px;
+   position: absolute;
+   top: -10px;
+   left: -10px;
 }
