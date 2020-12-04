@@ -3,6 +3,14 @@ html {
   opacity: .8;
 }
 
+::-webkit-scrollbar {
+   display: none;
+}
+
+::selection {
+  background: none;
+}
+
 body {
   margin: 15px;
   border: ridge 8px gold;
@@ -31,6 +39,10 @@ h2 {
   position: relative;
 }
 
+.item {
+   overflow: scroll;
+}
+
 .locked p {
   color: #f94179;  /*#a94179*/
   text-shadow: 1px 1px 2px #f94179,
@@ -39,9 +51,8 @@ h2 {
                   -1px -1px 2px #f94179;
   transform: rotateZ(-45deg);
   font-family: Helvetica;
-  //overflow: visible;
   font-size: 38px;
   position: absolute;
-  top: 0px;
-  left: -12px;
+  top: -10px;
+  left: -10px;
 }
