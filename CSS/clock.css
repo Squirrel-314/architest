@@ -1,0 +1,80 @@
+body {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.border {
+   height: 250px;
+   width: 250px;
+   border: solid 8px #000;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.dashed {
+   border: dotted 5px #000;
+   height: 230px;
+   width: 230px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+#dot {
+   height: 10px;
+   width: 10px;
+   background-color: #000;
+   border-radius: 50%;
+   position: absolute;
+}
+
+#second {
+   height: 120px;
+   width: 2px;
+   background-color: #000;
+   transform-origin: bottom center;
+   border-radius: 50%;
+   position: absolute;
+   bottom: 50%;
+   //animation: round 60s infinite;
+   animation: round 5s infinite linear;
+}
+
+#minute {
+   height: 80px;
+   width: 2px;
+   background-color: #000;
+   transform-origin: bottom center;
+   border-radius: 50%;
+   position: absolute;
+   bottom: 50%;
+   //animation: round 60s infinite;
+   animation: round 25s infinite linear;
+}
+
+#hour {
+   height: 50px;
+   width: 2px;
+   background-color: #000;
+   transform-origin: bottom center;
+   border-radius: 50%;
+   position: absolute;
+   bottom: 50%;
+   //animation: round 216000s infinite;
+   animation: round 125s infinite linear;
+}
+
+@keyframes round {
+   0% {
+      transform: rotate(0);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
