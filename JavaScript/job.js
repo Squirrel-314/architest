@@ -3,7 +3,7 @@ let budget = ['$10,000', '$8,000', '$12,000'][Math.floor(Math.random() * 3)];
 let waitTime = [8000, 12000, 10000][Math.floor(Math.random() * 3)];
 
 function accept() {
-   window.location.href = "../HTML/job-info.html";
+   window.location.href = "../HTML/tasks.html";
 }
 
 function deny() {
