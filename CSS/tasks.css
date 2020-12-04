@@ -1,12 +1,13 @@
 body, html {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #000;
 }
 
 .column-container {
@@ -14,19 +15,19 @@ body, html {
    width: 95vw;
    display: grid;
    grid-template-areas:
-    'a a b b'
-    'a a b b'
-    'c c b b'
-    'c c b b'
-    'c c d d'
-    'c c d d'
-    'c c d d'
-    'c c f f'
-    'e e f f'
-    'e e f f'
-    'e e f f'
-    'e e f f'
-    'e e f f';
+      'a b'
+      'a b'
+      'c b'
+      'c b'
+      'c d'
+      'c d'
+      'c d'
+      'c f'
+      'e f'
+      'e f'
+      'e f'
+      'e f'
+      'e f';
 }
 
 .column-item {
@@ -38,6 +39,7 @@ body, html {
    align-items: center;
    position: relative;
    text-align: center;
+   background-color: rgba(255, 255, 255, 0.5);
 }
 
 .column-item:nth-child(1) {
