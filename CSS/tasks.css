@@ -58,6 +58,7 @@ body, html {
 
 .column-item:nth-child(4) {
    grid-area: d;
+   padding-top: 15px;
 }
 
 .column-item:nth-child(5) {
@@ -66,19 +67,20 @@ body, html {
 
 .column-item:nth-child(6) {
    grid-area: f;
+   padding-top: 15px;
 }
 
 #market {
    padding: 25px 0 0 0;
 }
 
-#market i {
+i {
    font-size: 50px;
    margin: auto;
    transition: all .5s;
 }
 
-#market i:hover {
+i:hover {
    animation: hover .5s infinite linear alternate;
    transform-origin: bottom center;
    text-shadow: 2px 2px 25px rgb(35, 236, 235);
