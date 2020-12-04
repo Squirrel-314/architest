@@ -1,9 +1,16 @@
+//============================================================
+// Assign Job
+//============================================================
+
 let employer = ['Flimsy Foundation Inc.', 'Collapse Co.', 'Slapdash L.L.C.', 'Rinkydink Mistakes Corp', 'Rickity Builds Ltd', 'Evil Engineering Co-Op'][Math.floor(Math.random() * 6)];
 let budget = ['$10,000', '$8,000', '$12,000'][Math.floor(Math.random() * 3)];
 let waitTime = [8000, 12000, 10000][Math.floor(Math.random() * 3)];
 
 function accept() {
    window.location.href = "../HTML/tasks.html";
+   if (budget = "$10,000") {
+      budget = 10000;
+   }
 }
 
 function deny() {
@@ -27,3 +34,14 @@ function findJob() {
 }
 
 window.onload = findJob();
+
+//============================================================
+// Job Info
+//============================================================
+
+function jobInfoSetup() {
+   document.getElementById("employer").innerHTML = employer;
+   document.getElementById("employer").innerHTML = budget;
+}
+
+window.onload = jobInfoSetup();
