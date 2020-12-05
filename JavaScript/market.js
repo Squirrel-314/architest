@@ -58,6 +58,7 @@ function buyMud() {
    if (money >= resouces.mudCost){
       money -= resouces.mudCost;
       resouces.mud += 5;
+      //document.getElementById("mud").innerHTML = 
    }
 }
 function buyWood() {

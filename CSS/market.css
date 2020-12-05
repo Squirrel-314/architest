@@ -3,6 +3,7 @@ html {
    opacity: .8;
    text-align: center;
    overflow-x: hidden;
+   padding-bottom: 50px;
 }
 
 ::-webkit-scrollbar {
@@ -28,6 +29,19 @@ html {
    background-color: rgba(0, 0, 0, 0.9);
    border-radius: 4px;
    z-index: 1;
+   color: #fff;
+}
+
+.contents {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: 50px;
+   background-color: rgba(0, 0, 0, 0.9);
+   border-top: ridge 2px gold;
+   text-align: center;
    color: #fff;
 }
 
