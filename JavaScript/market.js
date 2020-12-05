@@ -29,9 +29,9 @@ var resouces = {
 
 var humanResouces = {
    worker: 0,
-   workerPay: 0,
+   workerPay: 50,
    overseer: 0,
-   overseerPay: 0,
+   overseerPay: 80,
    professionalWorker: 0,
    professionalWorkerPay: 0,
    professionalOverseer: 0,
@@ -119,17 +119,47 @@ function buyTitanium() {
 // Hire Workers
 //============================================================
 
+function hireWorker() {
+   if (money >= humanResouces.workerPay){
+      money -= humanResouces.workerPay;
+      humanResouces.worker += 1;
+   }
+}
+function hireOverseer() {
+   if (money >= humanResouces.overseerPay){
+      money -= humanResouces.overseerPay;
+      humanResouces.overseer += 1;
+   }
+}
 
+//Add the rest of the worker types
 
+//============================================================
+// Save
+//============================================================
 
+function save() {
+   localStorage.setItem("money", JSON.stringify(money));
+   localStorage.setItem("resouces", JSON.stringify(resouces));
+   localStorage.setItem("humanResouces", JSON.stringify(humanResouces));
+}
 
+var save = {
+   money: JSON.parse(localStorage.getItem("money")),
+   resouces: JSON.parse(localStorage.getItem("resouces")),
+   humanResouces: JSON.parse(localStorage.getItem("humanResouces")),
+}
 
+var saveMoney = save.money;
+var saveResouces = save.resouces;
+var saveHumanResouces = save.humanResouces;
 
-
-
-
-
-
-
-
-//Like limestone, sandstone is a sedimentary rock, formed by the settling and compression of materials over time. ... While limestone's density makes it strong under heavy pressure, sandstone is harder and provides better resistance against heat and impact
+if (saveMoney !== null) {
+  money = savegame;
+}
+if (saveResouces !== null) {
+  resouces = savegame;
+}
+if (saveHumanResouces !== null) {
+  humanResouces = savegame;
+}

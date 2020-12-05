@@ -5,7 +5,7 @@
       <link rel="stylesheet" href="../CSS/store.css">
       <title>Store</title>
    </head>
-   <body>
+   <body onbeforeunload="save()">
       <div class="much">
          <p id="money">$0</p>
       </div>
@@ -25,8 +25,8 @@
          </div>
          <div class="hire">
             <h2>Hire workers</h2>
-            <div onclick="hireWorker()" class="item">Worker</div>
-            <div onclick="hireOverseer()" class="item">Overseer</div>
+            <div onclick="hireWorker()" class="item">Worker <br> Pay $50</div>
+            <div onclick="hireOverseer()" class="item">Overseer <br> Pay $80</div>
             <div onclick="hireProfessionalWorker()" class="locked"><p>Locked</p><!-- Professional Worker  --></div>
             <div onclick="hireProfessionalOverseer()" class="locked"><p>Locked</p><!-- Professional Overseer  --></div>
             <div onclick="hireExpertWorker()" class="locked"><p>Locked</p><!-- Expert Worker --></div>
