@@ -138,11 +138,11 @@ function hireOverseer() {
 // Save
 //============================================================
 
-function save() {
+var saveData = window.setInterval(function() {
    localStorage.setItem("money", JSON.stringify(money));
    localStorage.setItem("resouces", JSON.stringify(resouces));
    localStorage.setItem("humanResouces", JSON.stringify(humanResouces));
-}
+}, 500)
 
 var save = {
    money: JSON.parse(localStorage.getItem("money")),
@@ -155,11 +155,11 @@ var saveResouces = save.resouces;
 var saveHumanResouces = save.humanResouces;
 
 if (saveMoney !== null) {
-  money = savegame;
+  money = saveMoney;
 }
 if (saveResouces !== null) {
-  resouces = savegame;
+  resouces = saveResouces;
 }
 if (saveHumanResouces !== null) {
-  humanResouces = savegame;
+  humanResouces = saveHumanResouces;
 }
