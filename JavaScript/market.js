@@ -24,7 +24,9 @@ var moneyAndResouces = window.setInterval(function() {
 // Buy Materials
 //============================================================
 
+var moneyAndResouces = window.setInterval(function(){
 
+}, 2000)
 
 //============================================================
 // Hire Workers
