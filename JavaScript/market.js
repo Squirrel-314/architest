@@ -16,6 +16,10 @@ var humanResouces {
    overseer: 0,
 }
 
+var moneyAndResouces = window.setInterval(function() {
+   
+}, 2000)
+
 //============================================================
 // Buy Materials
 //============================================================
