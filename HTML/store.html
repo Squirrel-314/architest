@@ -12,26 +12,29 @@
       <div class="container">
          <div class="buy">
             <h2>Buy materials</h2>
-            <div class="item">Wood <br> Cost $50</div>
-            <div class="item">Sandstone  </div>
-            <div class="item">Limestone</div>
-            <div class="item">Titanium</div>
-            <div class="locked"><p>Locked</p><!-- Iron  --></div>
-            <div class="locked"><p>Locked</p><!-- Plastic  --></div>
-            <div class="locked"><p>Locked</p><!-- Mud  --></div>
-            <div class="locked"><p>Locked</p><!-- Marble  --></div>
+            <div onclick="buyMud()" class="item">Mud <br> Cost $20</div>
+            <div onclick="buyWood()" class="item">Wood <br> Cost $50</div>
+            <div onclick="buyPlastic()" class="locked"><p>Locked</p><!-- Plastic <br> Cost $100--></div>
+            <div onclick="buyGlass()" class="locked"><p>Locked</p><!-- Glass <br> Cost $120--></div>
+            <div onclick="buyBricks()" class="locked"><p>Locked</p><!-- Bricks <br> Cost $150--></div>
+            <div onclick="buySandstone()" class="locked"><p>Locked</p><!-- Sandstone <br> Cost $200--></div>
+            <div onclick="buyLimestone()" class="locked"><p>Locked</p><!-- Limestone <br> Cost $200--></div>
+            <div onclick="buyIron()" class="locked"><p>Locked</p><!-- Iron <br> Cost $500--></div>
+            <div onclick="buyMarble()" class="locked"><p>Locked</p><!-- Marble <br> Cost $700--></div>
+            <div onclick="buyTitanium()" class="item">Titanium <br> Cost $5000</div>
          </div>
          <div class="hire">
             <h2>Hire workers</h2>
-            <div class="item">Worker</div>
-            <div class="item">Overseer</div>
-            <div class="locked"><p>Locked</p><!-- Proffesional Worker  --></div>
-            <div class="locked"><p>Locked</p><!-- Proffesional Overseer  --></div>
-            <div class="locked"><p>Locked</p><!-- Expert Worker --></div>
-            <div class="locked"><p>Locked</p><!-- Expert Overseer  --></div>
-            <div class="locked"><p>Locked</p><!-- Worker Robot  --></div>
-            <div class="locked"><p>Locked</p><!-- Overseer Robot  --></div>
+            <div onclick="hireWorker()" class="item">Worker</div>
+            <div onclick="hireOverseer()" class="item">Overseer</div>
+            <div onclick="hireProfessionalWorker()" class="locked"><p>Locked</p><!-- Professional Worker  --></div>
+            <div onclick="hireProfessionalOverseer()" class="locked"><p>Locked</p><!-- Professional Overseer  --></div>
+            <div onclick="hireExpertWorker()" class="locked"><p>Locked</p><!-- Expert Worker --></div>
+            <div onclick="hireExpertOverseer()" class="locked"><p>Locked</p><!-- Expert Overseer  --></div>
+            <div onclick="hireWorkerRobot()" class="locked"><p>Locked</p><!-- Worker Robot  --></div>
+            <div onclick="hireOverseerRobot()" class="locked"><p>Locked</p><!-- Overseer Robot  --></div>
          </div>
       </div>
    </body>
+   <script src="../JavaScript/market.js" charset="utf-8"></script>
 </html>
