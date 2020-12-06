@@ -58,13 +58,14 @@ function buyMud() {
    if (money >= resouces.mudCost){
       money -= resouces.mudCost;
       resouces.mud += 5;
-      //document.getElementById("mud").innerHTML = 
+      document.getElementById("mud").innerHTML = resouces.mud;
    }
 }
 function buyWood() {
    if (money >= resouces.woodCost){
       money -= resouces.woodCost;
       resouces.wood += 5;
+      document.getElementById("mud").innerHTML = resouces.wood;
    }
 }
 function buyPlastic() {
