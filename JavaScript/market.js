@@ -126,12 +126,14 @@ function hireWorker() {
    if (money >= humanResouces.workerPay){
       money -= humanResouces.workerPay;
       humanResouces.worker += 1;
+      document.getElementById("worker").innerHTML = humanResouces.worker + " Workers";
    }
 }
 function hireOverseer() {
    if (money >= humanResouces.overseerPay){
       money -= humanResouces.overseerPay;
       humanResouces.overseer += 1;
+      document.getElementById("overseer").innerHTML = humanResouces.overseer + " Overseers";
    }
 }
 
@@ -148,9 +150,11 @@ function setup() {
    document.getElementById("titanium").innerHTML = resouces.titanium + " Titanium";
 
    //Human Resouces
+   document.getElementById("worker").innerHTML = humanResouces.worker + " Workers";
+   document.getElementById("overseer").innerHTML = humanResouces.overseer + " Overseers";
 }
 
-window.onload = setup()
+window.onload = setup();
 
 //============================================================
 // Save
