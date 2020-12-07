@@ -58,14 +58,14 @@ function buyMud() {
    if (money >= resouces.mudCost){
       money -= resouces.mudCost;
       resouces.mud += 5;
-      document.getElementById("mud").innerHTML = resouces.mud;
+      document.getElementById("mud").innerHTML = resouces.mud + " Mud";
    }
 }
 function buyWood() {
    if (money >= resouces.woodCost){
       money -= resouces.woodCost;
       resouces.wood += 5;
-      document.getElementById("mud").innerHTML = resouces.wood;
+      document.getElementById("wood").innerHTML = resouces.wood + " Wood ";
    }
 }
 function buyPlastic() {
@@ -114,6 +114,7 @@ function buyTitanium() {
    if (money >= resouces.titaniumCost){
       money -= resouces.titaniumCost;
       resouces.titanium += 5;
+      document.getElementById("titanium").innerHTML = resouces.titanium + " Titanium";
    }
 }
 
@@ -137,6 +138,21 @@ function hireOverseer() {
 //Add the rest of the worker types
 
 //============================================================
+// Hire Workers
+//============================================================
+
+function setup() {
+   //Resouces
+   document.getElementById("mud").innerHTML = resouces.mud + " Mud";
+   document.getElementById("wood").innerHTML = resouces.wood + " Wood ";
+   document.getElementById("titanium").innerHTML = resouces.titanium + " Titanium";
+
+   //Human Resouces
+}
+
+window.onload = setup()
+
+//============================================================
 // Save
 //============================================================
 
@@ -144,7 +160,7 @@ var saveData = window.setInterval(function() {
    localStorage.setItem("money", JSON.stringify(money));
    localStorage.setItem("resouces", JSON.stringify(resouces));
    localStorage.setItem("humanResouces", JSON.stringify(humanResouces));
-}, 500)
+}, 5)
 
 var save = {
    money: JSON.parse(localStorage.getItem("money")),

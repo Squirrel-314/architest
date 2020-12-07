@@ -34,6 +34,9 @@ html {
 
 .contents {
    position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    bottom: 0;
    left: 0;
    right: 0;
@@ -43,6 +46,14 @@ html {
    border-top: ridge 2px gold;
    text-align: center;
    color: #fff;
+   overflow-x: scroll;
+}
+
+.contents hr {
+   visibility: hidden;
+   width: 5px;
+   padding: 0;
+   margin: 0;
 }
 
 h2 {
