@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <title>Welcome to Architest!</title>
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="styles.css">
+   <script src="main.js" charset="utf-8"></script>
+   <title>Welcome to Architest!</title>
+   <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <span id="help">?</span>
-    <h1>Welcome to Architest!</h1>
-    <p>Hello and welcome, architect! Here you will get hired to design buildings, and watch those be put to the test! With each project you will get a budget to spend on materials and workers. Good luck, and remember, if you ever need help, click the button in the top left corner.</p>
-    <div class="start-button"><a id="ok" href="HTML/room.html">What are we <br> waiting for!</a></div>
-    <div class="start-button" onclick="explaination()">Could you stop a moment to explain?</div>
-    <div class="explain">
-      <h2>Quick Start Guide</h2>
-      <p>Explanaiton</p>
-    </div>
+   <div class="welcome">
+      <div class="welcome-content">
+         <h1>Welcome to Architest!</h1>
+         <p>Hello and welcome, architect! Here you will get hired to design buildings, and watch those be put to the test! With each project you will get a budget to spend on materials and workers. Good luck, and remember, if you ever need help, click the button in the top left corner.</p>
+         <div class="welcome-continue" onclick="hideWelcome()">Let's go!</div>
+         <div class="welcome-continue">Explanaiton</div>
+         <div class="welcome-explain">
+            <h2>Quick Start Guide</h2>
+            <p>Explanaiton</p>
+         </div>
+      </div>
+   </div>
+   <div class="waiting-room">
+      <div class="waiting-room-content">
+         <img class="waiting-room-clock" src="Images/clock.gif" alt="Clock">
+         <img class="waiting-room-chair" src="Images/chair.png" alt="Chair">
+         <div class="waiting-room-job-board">
+            <h2>Jobs</h2>
+            <p class="waiting-room-job">You have no job offers.</p>
+            <div onclick="acceptJob()" class="waiting-room-reply waiting-room-accept">Accept</div>
+            <div onclick="denyJob()" class="waiting-room-reply waiting-room-deny">Deny</div>
+         </div>
+      </div>
+   </div>
 </body>
 </html>
